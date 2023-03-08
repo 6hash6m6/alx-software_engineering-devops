@@ -1,5 +1,2 @@
 #!/bin/bash
-
-parent_dir=..
-
-cp -u *.html $parent_dir
+cp -u *.html ..
