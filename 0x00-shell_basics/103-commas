@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1a | sort -df | sed ':a;N;$!ba;s/\n/, /g; s/,\s*$//; s/^\(\.\{0,1\}\)\(\.\{0,1\}\)[[:alnum:]]\{1,\}/\1\2\0/g' | sed 's/\(.*\)\/$/\1\//' | tr -d '\n'; echo ""
+ls -1a | awk '{printf("%s%s",sep,$0); sep=", "} END{print ""}'
