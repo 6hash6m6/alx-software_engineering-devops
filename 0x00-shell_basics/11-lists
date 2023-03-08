@@ -1,4 +1,4 @@
 #!/bin/bash
-ls -alt
-ls -alt /alx-system_engineering-devops
-ls -alt /boot/
+ls -aln
+ls -aln /alx-system_engineering-devops
+ls -aln /boot/
