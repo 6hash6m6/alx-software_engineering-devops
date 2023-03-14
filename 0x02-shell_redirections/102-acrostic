@@ -1,2 +1,2 @@
 #!/bin/bash
-sed 's/\(^\|\n\)\(.\)/\2/g' An\ Acrostic
+sed 's/^\([^[:alpha:]]*[[:alpha:]]\).*/\1/g' < "An Acrostic" | tr -d '\n'; echo
